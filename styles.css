@@ -1,0 +1,615 @@
+/**
+ * Copyright 2020 sfchi
+ * 
+ */
+
+
+/*=============================================
+=            Theme            =
+=============================================*/
+
+:root {
+    --primary-color: #3a52a4;
+}
+
+.link-unstyled {
+    text-decoration: none;
+    color: unset;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-header {
+    font-size: 1.85rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-header small {
+    font-size: 1rem;
+    color: #244cd9;
+}
+
+h6 {
+    text-transform: uppercase;
+}
+
+
+/*=====  End of Theme  ======*/
+
+
+/*=============================================
+=            Layouts           =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    height: 100vh;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contained-text {
+    max-width: 768px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.spaced {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.padded {
+    padding: 4rem 2rem;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background: #7babf3;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: black;
+}
+
+
+/*=====  End of Layouts ======*/
+
+
+/*=============================================
+=            Navigation            =
+=============================================*/
+
+.navbar {
+    padding: 0 20px;
+    background-color: #838fb5;
+}
+
+.navbar-nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left {
+    flex-basis: 20%;
+}
+
+.navbar-brand {
+    display: inline;
+}
+
+.navbar-logo-text {
+    display: inline-block;
+}
+
+.navbar-logo {
+    height: 36px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.construct {
+    color: #3a52a4;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.tagline {
+    color: white;
+    font-style: italic;
+    font-size: 0.75rem;
+}
+
+.navbar-right {
+    display: flex;
+    flex-basis: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.navbar-list-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 0.85rem;
+}
+
+.navbar-list-item:hover,
+.navbar-list-item:focus {
+    color: #3a52a4;
+}
+
+.navbar-list-item:active {
+    color: #3a52a4;
+}
+
+.search-bar {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.navbar-search .search-bar {
+    padding-left: 35px;
+}
+
+.navbar-search {
+    position: relative;
+}
+
+.navbar-search i {
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    padding: 9px 8px;
+    font-size: 1.1rem;
+    color: #aaa;
+}
+
+
+/*=====  End of Navigation  =====*/
+
+
+/*=============================================
+=            Hero            =
+=============================================*/
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #244cd9;
+}
+
+.hero {
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/AnyConv.com-header.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-text h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+
+/*=====  End of Hero  ======*/
+
+
+/*=============================================
+=            About Us            =
+=============================================*/
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    /* min-height: 500px; */
+}
+
+.about-us-content {
+    flex-basis: 60%;
+    padding-right: 2rem;
+    align-self: center;
+}
+
+.about-img {
+    flex-basis: 40%;
+    background-image: url("images/engineer.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.about-us-content .section-header {
+    text-align: left;
+}
+
+
+/*=====  End of About Us  ======*/
+
+
+/*=============================================
+=            Why Choose Us            =
+=============================================*/
+
+.why-choose-us {
+    background-color: #f4f7ff;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    list-style-type: none;
+}
+
+.features>* {
+    padding: 1.5rem;
+}
+
+.features-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+
+/*=====  End of Why Choose Us  ======*/
+
+
+/*=============================================
+=            Our Services            =
+=============================================*/
+
+.service-items {
+    display: flex;
+}
+
+.card {
+    background-color: #f4f7ff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.card-header {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*=====  End of Our Services  ======*/
+
+
+/*=============================================
+=            Made With Love            =
+=============================================*/
+
+.with-love {
+    background-color: #5994ee;
+    text-align: center;
+    color: #ffffff;
+}
+
+.with-love-nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.with-love-nav-item {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    padding: 7.5px 30px;
+    border-radius: 15px;
+}
+
+.with-love-nav-item:hover,
+.with-love-nav-item:active,
+.with-love-nav-item:focus,
+.with-love-nav-item.selected {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.gallery {
+    display: flex;
+    height: 500px;
+}
+
+.gallery-left {
+    flex-basis: 45%;
+    display: inherit;
+}
+
+.gallery-right {
+    flex-basis: 55%;
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-left: 1%;
+}
+
+.gallery-right-img {
+    width: 49%;
+    height: 49%;
+}
+
+.gallery-left .gallery-img {
+    width: 100%;
+    height: 100%;
+}
+
+#gallery-img-1 {
+    background-image: url("images/madewithlove1.jpg");
+}
+
+#gallery-img-2 {
+    background-image: url("images/madewithlove2.jpg");
+}
+
+#gallery-img-3 {
+    background-image: url("images/madewithlove3.jpg");
+}
+
+#gallery-img-4 {
+    background-image: url("images/madewithlove4.jpg");
+}
+
+#gallery-img-5 {
+    background-image: url("images/madewithlove5.jpg");
+}
+
+.gallery-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*=====  End of Made With Love  ======*/
+
+
+/*=============================================
+
+=            Customer Reviews            =
+=============================================*/
+
+.customer-reviews {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.customer-review-card {
+    margin: 1.5rem;
+}
+
+.customer-review-text {
+    position: relative;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: #5994ee;
+}
+
+.customer-review-text:after {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+    content: "";
+    transform: rotate(45deg);
+    margin-top: -25px;
+    background-color: #5994ee;
+    z-index: -1;
+}
+
+.customer-review-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+/*======  End of Customer Reviews  ======*/
+
+
+/* =            Contact Us            =*/
+
+.contact {
+    background-color: #5994ee;
+    text-align: center;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 2rem 0;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+/*=====  End of Contact Us  ======*/
+
+
+/*=            Footer            =*/
+
+.footer {
+    color: #ffffff;
+    background: #303036;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-main {
+    display: flex;
+}
+
+.footer-content {
+    flex: 1;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    width: 35px;
+}
+
+.fa-twitter {
+    background: #55acee;
+}
+
+.fa-instagram {
+    background: #125688;
+}
+
+.exp-link {
+    display: block;
+}
+
+.exp-link:hover {
+    color: blue;
+}
+
+.lat-post:hover {
+    color: blue;
+}
+
+
+/*=====  End of Footer  ======*/
+
+
+/*=============================================
+=            Media Queries            =
+=============================================*/
+
+@media screen and (max-width: 500px) {
+    * {
+        font-size: 13px;
+    }
+    .navbar-nav {
+        height: 90px;
+    }
+    .tagline {
+        font-size: 0.6rem;
+    }
+    .navbar-right {
+        flex-direction: column;
+    }
+    .navbar-list-item {
+        padding: 0 10px;
+        font-size: 0.7rem;
+    }
+    .about-us {
+        flex-direction: column;
+    }
+    .features {
+        flex-direction: column;
+    }
+    .service-items {
+        flex-direction: column;
+    }
+    .with-love-nav {
+        margin: 1rem 0;
+    }
+    .with-love-nav-item {
+        padding: 3.5px 7px;
+        font-size: 8px;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .gallery-right,
+    .gallery-left {
+        margin-bottom: 1rem;
+    }
+    .customer-reviews {
+        flex-direction: column;
+    }
+    .footer-main {
+        flex-direction: column;
+    }
+}
+
+
+/*=====  End of Media Queries  ======*/
