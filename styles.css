@@ -118,11 +118,13 @@ body {
 .navbar-nav {
     height: 60px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .navbar-left {
-    flex-basis: 20%;
+    /* flex-basis: 20%; */
 }
 
 .navbar-brand {
@@ -153,17 +155,17 @@ body {
 }
 
 .navbar-right {
-    display: flex;
-    flex-basis: 80%;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-basis: 80%; */
+    /* flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end; */
     color: white;
 }
 
 .navbar-list {
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
     list-style-type: none;
 }
 
@@ -210,10 +212,22 @@ body {
     color: #aaa;
 }
 
+/* Sticky Navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0px 2px 2px #ccc;
+}
+
+.sticky .navbar-list-item {
+    color: #555;
+    font-weight: bold;
+}
 
 /*=====  End of Navigation  =====*/
-
-
 /*=============================================
 =            Hero            =
 =============================================*/
